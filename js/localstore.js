@@ -46,5 +46,13 @@
     getName.addEventListener("submit", PerformGreeting);
     event.preventDefault();
   }
+    
+    document.getElementById("clearLocal").onclick = clearLocalStorage;
+    
+    function clearLocalStorage() {
+    "use strict";
+    localStorage.clear();
+}
+
 
 }());
